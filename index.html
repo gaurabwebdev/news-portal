@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Portal</title>
+    <!-- FontAwesome CDN Link -->
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></link>
+    <!-- BootStrap CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body onload="loadNews('categories')">
+    
+    <!-- Header Area Starts -->
+        <header>
+            <section>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid px-5 py-3">
+                    <div class="container">
+                        <a class="navbar-brand d-flex justify-content-center align-items-center gap-2" href="#"> <span class="btn btn-warning">
+                            News
+                        </span> Portal</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <img src="assets/img/Avatar.png" alt="" srcset="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div id="category-container" class="container-fluid d-flex justify-content-between align-items-center gap-1 px-5 py-3 border-top border-bottom">
+
+                </div>
+            </section>
+        </header>
+    <!-- Header Area Ends -->
+
+
+
+    <!-- Main Area Starts -->
+        <main>
+            <section>
+                <div id="category-msg">
+            
+                </div>
+
+                <div id="filter-section" class="container my-3 d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <p class="my-0">
+                            Sort By View:
+                        </p>
+                        <div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Default</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary">
+                            Today's Pick
+                        </button>
+                        <button class="btn btn-outline-primary">
+                            Trending
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container" id="newscontainer">
+                    
+                </div>
+            </section>
+
+            <section>
+                <div class="modal-section">
+                    <!-- Modal -->
+                    <div class="modal fade" id="single-news-modal" tabindex="-1" aria-labelledby="single-news-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div id="modal-header" class="modal-header">
+                                <h1 class="modal-title fs-5" id="single-news-modalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div id="modal-body" class="modal-body">
+                            
+                            </div>
+                            <div id="modal-footer" class="modal-footer flex-row-reverse justify-content-between">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <!-- Main Area Ends -->
+
+    <!-- Footer Area Starts -->
+        <footer>
+            <section class="bg-body-tertiary py-4 border-top">
+                <p class="text-center">
+                    Copyright 2021 News Portal
+                </p>
+            </section>
+        </footer>
+    <!-- Footer Area Ends -->
+
+    <!-- FontAwesome CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+    <!-- BootStrap CDN JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Custom JS Link -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

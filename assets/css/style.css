@@ -1,0 +1,12 @@
+/* Nav Bar CSS */
+.cateogry-items, .arrow{
+    cursor: pointer;
+}
+.cateogry-items:hover, .arrow:hover{
+    color: #5832f2 !important;
+}
+
+.author-pic{
+    width: 40px;
+    height: 40px;
+}
